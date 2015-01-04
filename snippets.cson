@@ -1,0 +1,34 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# ".source.coffee":
+#   "Console log":
+#     "prefix": "log"
+#     "body": "console.log $1"
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it here:
+# https://github.com/bevry/cson#what-is-cson
+
+"*":
+  "...":
+    "prefix": "..."
+    "body": "…$0"
+
+".php":
+  "Default header":
+    "prefix": "dh"
+    "body": "/*\n * douggr/$1\n *\n * @link https://github.com/douggr/$1\n * @version 0.0.1\n * @license MIT\n */\n$0"
+
+'.source.js':
+  'JavaScript base template':
+    'prefix': 'jt'
+    'body': '/*\n * douggr/$1\n *\n * @license MIT http://opensource.org/licenses/MIT\n * @link https://github.com/douggr/$1\n * @version 0.0.1\n */\n\n/*jslint indent:2, browser:true */\n(function ($2) {\n\t"use strict";\n\n\t$0\n}($3));
+    '

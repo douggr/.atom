@@ -1,0 +1,51 @@
+'global':
+  'editor':
+    'showIndentGuide': true
+    'showInvisibles': true
+    'useShadowDOM': true
+    'softWrap': true
+  'core':
+    'autoHideMenuBar': true
+    'themes': [
+      'atom-dark-ui'
+      'monokai'
+    ]
+    'disabledPackages': [
+      'language-clojure'
+      'language-go'
+      'language-java'
+      'language-objective-c'
+      'language-perl'
+      'release-notes'
+      'metrics'
+      'link'
+      'archive-view'
+      'autoflow'
+      'autosave'
+      'background-tips'
+      'deprecation-cop'
+      'encoding-selector'
+      'bookmarks'
+    ]
+  'exception-reporting':
+    'userId': '1e4a4682-cdb4-f0dc-80b6-821ec34126e8'
+  'welcome':
+    'showOnStartup': false
+'.html.php.text':
+  'editor':
+    'tabLength': 4
+    'scrollPastEnd': true
+    'softWrapAtPreferredLineLength': true
+    'softWrap': false
+'.basic.html.text':
+  'editor':
+    'softWrapAtPreferredLineLength': false
+    'scrollPastEnd': true
+'.json.source':
+  'editor':
+    'softWrap': false
+    'scrollPastEnd': true
+'.js.source':
+  'editor':
+    'softWrapAtPreferredLineLength': true
+    'scrollPastEnd': true
