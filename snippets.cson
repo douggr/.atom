@@ -17,21 +17,50 @@
 # If you are unfamiliar with CSON, you can read more about it here:
 # https://github.com/bevry/cson#what-is-cson
 
-"*":
+".text":
   "...":
     "prefix": "..."
     "body": "…$0"
 
+  "Default header":
+    "prefix": "dh"
+    "body": """
+      /*
+       * douggr/$1
+       *
+       * @link https://github.com/douggr/$1
+       * @version 0.0.1
+       * @license MIT
+       */
+
+      $0
+    """
+
 ".source.js":
   "JavaScript base template":
     "prefix": "jt"
-    "body": "/*\n * douggr/$1\n *\n * @license MIT http://opensource.org/licenses/MIT\n * @link https://github.com/douggr/$1\n * @version 0.0.1\n */\n\n/*jslint indent:2, browser:true */\n(function ($2) {\n\t\"use strict\";\n\n\t$0\n}($3));
-    "
-".source.php":
-  "Default header":
-    "prefix": "dh"
-    "body": "/*\n * douggr/$1\n *\n * @link https://github.com/douggr/$1\n * @version 0.0.1\n * @license MIT\n */\n$0"
+    "body": """
+      /*
+       * douggr/$1
+       *
+       * @license MIT http://opensource.org/licenses/MIT
+       * @link https://github.com/douggr/$1
+       * @version 0.0.1
+       */
 
+      /*jslint indent:2, browser:true */
+      (function ($2) {
+        "use strict";
+
+        ${0:// code…}
+      }($3));
+    """
+
+".source.php":
   "for":
     "prefix": "for"
-    "body": "for ($${1:i} = ${2:0}; $${1:i} < $3; $${1:i}++) { \n\t${0:# code...}\n}"
+    "body": """
+      for ($${1:i} = ${2:0}; $${1:i} < $3; $${1:i}++) {
+        ${0:// code…}
+      }
+    """
