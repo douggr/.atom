@@ -4,6 +4,7 @@
     'showInvisibles': true
     'useShadowDOM': true
     'softWrap': true
+    'invisibles': {}
   'core':
     'autoHideMenuBar': true
     'themes': [
@@ -49,3 +50,11 @@
   'editor':
     'softWrapAtPreferredLineLength': true
     'scrollPastEnd': true
+'.coffee.source':
+  'editor':
+    'softWrap': false
+    'scrollPastEnd': true
+'.litcoffee.source':
+  'editor':
+    'scrollPastEnd': true
+    'softWrap': false
