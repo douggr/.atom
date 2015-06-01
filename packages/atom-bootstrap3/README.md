@@ -1,6 +1,6 @@
-# Twitter Bootstrap 3 Support for Atom
+# Bootstrap 3 Support for Atom
 
-Provides [Twitter Bootstrap 3][1] classes and HTML tags with autocompletion features.
+Provides [Bootstrap 3][1] classes and HTML tags with autocompletion features.
 
 Install:
 ```bash
@@ -11,7 +11,7 @@ Key Features:
 
   - Supports autocompletion of all helper classes in JavaScript, CSS and HTML
   - Snippet support for all components.
-  - Autocompletion for **Glyphicons** and **Fontawesome**
+  - Autocompletion for **Glyphicons**, **Fontawesome** and **Octicons**
 
 An example with [HTML Preview][3]
 
@@ -21,6 +21,7 @@ An example with [HTML Preview][3]
 
   - `html-`: Generates Basic HTML Template
   - `html-min`: Generates Basic HTML Template without comments
+  - `html-oi`: Generates Basic HTML Template (replace `fontawesome` in favor of `octicons`)
 
 ## Components
 
@@ -32,6 +33,7 @@ The plugin has Glyphicon and Fontawesome support.
 
   - `icon`: Generates glyphicon icon snippet
   - `fa`: Generates fontawesome icon snippet
+  - `oi`: Generates octicon snippet
 
 ### Alert
 
@@ -121,7 +123,7 @@ The plugin has Glyphicon and Fontawesome support.
   - `con`: Generates container: `<div class="container"></div>`
   - `conf`: Generates fluid container: `<div class="container-fluid"></div>`
 
-## Typograpgy
+## Typography
 
 - `lead`: Lead class `<p class="lead">`
 - `h1-`: Heading 1 `<h1>Text {<small>optional</small>}</h1>`

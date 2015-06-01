@@ -1,10 +1,15 @@
-path = require 'path'
-{$, $$$, ScrollView} = require 'atom'
-_ = require 'underscore-plus'
+path                  = require 'path'
+{CompositeDisposable, Disposable} = require 'atom'
+{$, $$$, ScrollView}  = require 'atom-space-pen-views'
+_                     = require 'underscore-plus'
 
 module.exports =
 class AtomHtmlPreviewView extends ScrollView
   atom.deserializers.add(this)
+
+  editorSub           : null
+  onDidChangeTitle    : -> new Disposable()
+  onDidChangeModified : -> new Disposable()
 
   @deserialize: (state) ->
     new AtomHtmlPreviewView(state)
@@ -21,16 +26,18 @@ class AtomHtmlPreviewView extends ScrollView
       if atom.workspace?
         @subscribeToFilePath(filePath)
       else
-        @subscribe atom.packages.once 'activated', =>
+        # @subscribe atom.packages.once 'activated', =>
+        atom.packages.onDidActivatePackage =>
           @subscribeToFilePath(filePath)
 
   serialize: ->
-    deserializer: 'AtomHtmlPreviewView'
-    filePath: @getPath()
-    editorId: @editorId
+    deserializer : 'AtomHtmlPreviewView'
+    filePath     : @getPath()
+    editorId     : @editorId
 
   destroy: ->
-    @unsubscribe()
+    # @unsubscribe()
+    @editorSub.dispose()
 
   subscribeToFilePath: (filePath) ->
     @trigger 'title-changed'
@@ -52,59 +59,48 @@ class AtomHtmlPreviewView extends ScrollView
     if atom.workspace?
       resolve()
     else
-      @subscribe atom.packages.once 'activated', =>
+      # @subscribe atom.packages.once 'activated', =>
+      atom.packages.onDidActivatePackage =>
         resolve()
         @renderHTML()
 
   editorForId: (editorId) ->
-    for editor in atom.workspace.getEditors()
+    for editor in atom.workspace.getTextEditors()
       return editor if editor.id?.toString() is editorId.toString()
     null
 
-  handleEvents: ->
+  handleEvents: =>
 
     changeHandler = =>
       @renderHTML()
-      pane = atom.workspace.paneForUri(@getUri())
+      pane = atom.workspace.paneForURI(@getURI())
       if pane? and pane isnt atom.workspace.getActivePane()
         pane.activateItem(this)
 
+    @editorSub = new CompositeDisposable
+
     if @editor?
-      @subscribe(@editor.getBuffer(), 'contents-modified', changeHandler)
-      @subscribe @editor, 'path-changed', => @trigger 'title-changed'
+      if not atom.config.get("atom-html-preview.triggerOnSave")
+        @editorSub.add @editor.onDidChange _.debounce(changeHandler, 700)
+      else
+        @editorSub.add @editor.onDidSave changeHandler
+      @editorSub.add @editor.onDidChangePath => @trigger 'title-changed'
 
   renderHTML: ->
     @showLoading()
     if @editor?
-      @renderHTMLCode(@editor.getText())
+      @renderHTMLCode()
 
   renderHTMLCode: (text) ->
-    text = """
-    <!doctype html>
-    <html>
-      <head>
-        <meta charset="utf-8">
-        <title>HTML Preview</title>
-        <style>
-          body {
-            font-family: "Helvetica Neue", Helvetica, sans-serif;
-            font-size: 14px;
-            line-height: 1.6;
-            background-color: #fff;
-            overflow: scroll;
-            box-sizing: border-box;
-          }
-        </style>
-      </head>
-      <body>
-        #{text}
-      </body>
-    </html>
-    """
+    if not atom.config.get("atom-html-preview.triggerOnSave") then @editor.save()
     iframe = document.createElement("iframe")
-    iframe.src = "data:text/html;charset=utf-8,#{encodeURI(text)}"
+    # Fix from @kwaak (https://github.com/webBoxio/atom-html-preview/issues/1/#issuecomment-49639162)
+    # Allows for the use of relative resources (scripts, styles)
+    iframe.setAttribute("sandbox", "allow-scripts allow-same-origin")
+    iframe.src = @getPath()
     @html $ iframe
-    @trigger('atom-html-preview:html-changed')
+    # @trigger('atom-html-preview:html-changed')
+    atom.commands.dispatch 'atom-html-preview', 'html-changed'
 
   getTitle: ->
     if @editor?
@@ -112,7 +108,7 @@ class AtomHtmlPreviewView extends ScrollView
     else
       "HTML Preview"
 
-  getUri: ->
+  getURI: ->
     "html-preview://editor/#{@editorId}"
 
   getPath: ->

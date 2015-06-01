@@ -1,15 +1,25 @@
-url = require 'url'
+url                   = require 'url'
+{CompositeDisposable} = require 'atom'
 
-HtmlPreviewView = require './atom-html-preview-view'
+HtmlPreviewView       = require './atom-html-preview-view'
 
 module.exports =
+  config:
+    triggerOnSave:
+      type        : 'boolean'
+      description : 'Watch will trigger on save.'
+      default     : false
+
   htmlPreviewView: null
 
   activate: (state) ->
-    atom.workspaceView.command 'atom-html-preview:toggle', =>
-      @toggle()
+    # Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
+    @subscriptions = new CompositeDisposable
 
-    atom.workspace.registerOpener (uriToOpen) ->
+    # Register command that toggles this view
+    @subscriptions.add atom.commands.add 'atom-workspace', 'atom-html-preview:toggle': => @toggle()
+
+    atom.workspace.addOpener (uriToOpen) ->
       try
         {protocol, host, pathname} = url.parse(uriToOpen)
       catch error
@@ -28,14 +38,14 @@ module.exports =
         new HtmlPreviewView(filePath: pathname)
 
   toggle: ->
-    editor = atom.workspace.getActiveEditor()
+    editor = atom.workspace.getActiveTextEditor()
     return unless editor?
 
     uri = "html-preview://editor/#{editor.id}"
 
-    previewPane = atom.workspace.paneForUri(uri)
+    previewPane = atom.workspace.paneForURI(uri)
     if previewPane
-      previewPane.destroyItem(previewPane.itemForUri(uri))
+      previewPane.destroyItem(previewPane.itemForURI(uri))
       return
 
     previousActivePane = atom.workspace.getActivePane()
@@ -43,3 +53,6 @@ module.exports =
       if htmlPreviewView instanceof HtmlPreviewView
         htmlPreviewView.renderHTML()
         previousActivePane.activate()
+
+  deactivate: ->
+    @subscriptions.dispose()

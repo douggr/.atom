@@ -1,11 +1,9 @@
 @import 'syntax-variables';
 
-.editor-colors, :host {
+atom-text-editor, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
-}
 
-.editor, :host {
   .invisible-character {
     color: @syntax-invisible-character-color;
   }
@@ -108,12 +106,19 @@
 }
 
 .constant.character,
+.constant.escape,
 .constant.other {
   color: #AE81FF;
 }
 
 .keyword {
   color: #F92672;
+}
+
+.keyword.operator.bracket,
+.keyword.operator.punctuation,
+ {
+  color: #FFFFFF;
 }
 
 .storage {
@@ -126,13 +131,13 @@
 }
 
 .entity.name.class {
-  text-decoration: underline;
+  text-decoration: none;
   color: #A6E22E;
 }
 
 .entity.other.inherited-class {
   font-style: italic;
-  text-decoration: underline;
+  text-decoration: none;
   color: #A6E22E;
 }
 
@@ -167,6 +172,10 @@
   color: #66D9EF;
 }
 
+.support.function.decl {
+  color: #A6E22E;
+}
+
 .support.constant {
   color: #66D9EF;
 }
@@ -190,4 +199,9 @@
 // Jade syntax
 .class.jade {
   color: #AE81FF;
+}
+
+// 'this' Javascript
+.variable.language.js {
+  color: #F92672;
 }
