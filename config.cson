@@ -1,11 +1,10 @@
 "*":
   editor:
-    showInvisibles: true
     showIndentGuide: true
-    useShadowDOM: true
-    invisibles:
-      {}
+    invisibles: {}
     scrollPastEnd: true
+    autoIndentOnPaste: false
+    showInvisibles: true
   core:
     disabledPackages: [
       "language-clojure"
@@ -26,13 +25,33 @@
       "language-csharp"
       "language-python"
       "language-toml"
+      "image-view"
+      "language-coffee-script"
+      "language-hyperlink"
+      "open-on-github"
+      "package-generator"
+      "welcome"
+      "language-make"
+      "styleguide"
+      "spell-check"
     ]
-    autoHideMenuBar: true
     audioBeep: false
+    projectHome: "/srv/projects"
+    ignoredNames: [
+      ".git"
+      ".svn"
+      "node_modules"
+      "vendor"
+      "dist"
+      "*.png"
+      "*.gif"
+      "*.jpg"
+    ]
     themes: [
       "one-dark-ui"
-      "monokai"
+      "solarized-dark-syntax"
     ]
+    autoHideMenuBar: true
   welcome:
     showOnStartup: false
   "atom-beautify":
@@ -40,8 +59,26 @@
     css_selector_separator_newline: true
     html_indent_inner_html: true
     _analyticsUserId: "ff0b9d6c-1337-48d2-b1b5-4c7aecd3d264"
+    _loggerLevel: "error"
+    analytics: false
+    js_break_chained_methods: true
+    js_end_with_newline: true
+    js_space_after_anon_function: true
+    js_unescape_strings: true
   "autocomplete-plus":
     enableAutoActivation: false
+  "exception-reporting":
+    userId: "a598e322-122a-8889-25dd-d886b7febeb5"
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  "highlight-line": {}
+  "fuzzy-finder": {}
+  "grammar-selector": {}
+  "markdown-preview":
+    useGitHubStyle: true
 ".html.php.text":
   editor:
     tabLength: 4
