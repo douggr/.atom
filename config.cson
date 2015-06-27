@@ -36,7 +36,6 @@
       "spell-check"
     ]
     audioBeep: false
-    projectHome: "/srv/projects"
     ignoredNames: [
       ".git"
       ".svn"
@@ -79,29 +78,29 @@
   "grammar-selector": {}
   "markdown-preview":
     useGitHubStyle: true
+".basic.html.text":
+  editor:
+    softWrapAtPreferredLineLength: false
+    scrollPastEnd: true
 ".html.php.text":
   editor:
     tabLength: 4
     scrollPastEnd: true
     softWrapAtPreferredLineLength: true
     softWrap: false
-".basic.html.text":
+".js.source":
   editor:
     softWrapAtPreferredLineLength: false
-    scrollPastEnd: true
-".json.source":
-  editor:
-    softWrap: false
-    scrollPastEnd: true
-".coffee.source":
-  editor:
-    softWrap: false
     scrollPastEnd: true
 ".litcoffee.source":
   editor:
     scrollPastEnd: true
     softWrap: false
-".js.source":
+".coffee.source":
   editor:
-    softWrapAtPreferredLineLength: false
+    softWrap: false
+    scrollPastEnd: true
+".json.source":
+  editor:
+    softWrap: false
     scrollPastEnd: true
