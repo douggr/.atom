@@ -1,7 +1,7 @@
 nohup.out
 storage
 compile-cache
-packages
+packages/
 dev
 .apm
 .npm
