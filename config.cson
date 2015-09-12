@@ -3,7 +3,6 @@
     showIndentGuide: true
     invisibles: {}
     scrollPastEnd: true
-    showInvisibles: true
     confirmCheckoutHeadRevision: false
   core:
     disabledPackages: [
@@ -30,6 +29,10 @@
       "welcome"
       "styleguide"
       "spell-check"
+      "about"
+      "language-c"
+      "language-go"
+      "dev-live-reload"
     ]
     audioBeep: false
     ignoredNames: [
@@ -43,7 +46,6 @@
       "*.gif"
       "*.jpg"
     ]
-    autoHideMenuBar: true
     projectHome: "/var/projects"
     themes: [
       "atom-material-ui"
@@ -62,8 +64,11 @@
     js_end_with_newline: true
     js_space_after_anon_function: true
     js_unescape_strings: true
+    html_end_with_newline: true
+    js_end_with_comma: true
   "autocomplete-plus":
     enableAutoActivation: false
+    defaultProvider: "Fuzzy"
   "exception-reporting":
     userId: "a598e322-122a-8889-25dd-d886b7febeb5"
   whitespace:
@@ -84,32 +89,33 @@
     useRoboto: true
   "tool-bar":
     position: "Left"
-".basic.html.text":
-  editor:
-    softWrapAtPreferredLineLength: false
-    scrollPastEnd: true
+  "atom-autocomplete-php": {}
 ".html.php.text":
   editor:
     tabLength: 4
     scrollPastEnd: true
     softWrapAtPreferredLineLength: false
     softWrap: false
-".source.sql":
+".basic.html.text":
   editor:
-    softWrap: true
-".json.source":
-  editor:
-    softWrap: false
+    softWrapAtPreferredLineLength: false
     scrollPastEnd: true
-".coffee.source":
+".js.source":
   editor:
-    softWrap: false
+    softWrapAtPreferredLineLength: false
     scrollPastEnd: true
 ".litcoffee.source":
   editor:
     scrollPastEnd: true
     softWrap: false
-".js.source":
+".coffee.source":
   editor:
-    softWrapAtPreferredLineLength: false
+    softWrap: false
     scrollPastEnd: true
+".json.source":
+  editor:
+    softWrap: false
+    scrollPastEnd: true
+".source.sql":
+  editor:
+    softWrap: true
