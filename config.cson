@@ -67,7 +67,6 @@
     html_end_with_newline: true
     js_end_with_comma: true
   "autocomplete-plus":
-    enableAutoActivation: false
     defaultProvider: "Fuzzy"
   "exception-reporting":
     userId: "a598e322-122a-8889-25dd-d886b7febeb5"
@@ -90,32 +89,32 @@
   "tool-bar":
     position: "Left"
   "atom-autocomplete-php": {}
+".basic.html.text":
+  editor:
+    softWrapAtPreferredLineLength: false
+    scrollPastEnd: true
 ".html.php.text":
   editor:
     tabLength: 4
     scrollPastEnd: true
     softWrapAtPreferredLineLength: false
     softWrap: false
-".basic.html.text":
+".source.sql":
   editor:
-    softWrapAtPreferredLineLength: false
+    softWrap: true
+".json.source":
+  editor:
+    softWrap: false
     scrollPastEnd: true
-".js.source":
+".coffee.source":
   editor:
-    softWrapAtPreferredLineLength: false
+    softWrap: false
     scrollPastEnd: true
 ".litcoffee.source":
   editor:
     scrollPastEnd: true
     softWrap: false
-".coffee.source":
+".js.source":
   editor:
-    softWrap: false
+    softWrapAtPreferredLineLength: false
     scrollPastEnd: true
-".json.source":
-  editor:
-    softWrap: false
-    scrollPastEnd: true
-".source.sql":
-  editor:
-    softWrap: true
