@@ -4,6 +4,7 @@
     invisibles: {}
     scrollPastEnd: true
     confirmCheckoutHeadRevision: false
+    fontFamily: "Fira Mono"
   core:
     disabledPackages: [
       "language-clojure"
@@ -85,7 +86,6 @@
     disableAnimations: true
     panelContrast: true
     showTabIcons: "Show on all tabs"
-    useRoboto: true
   "tool-bar":
     position: "Left"
   "atom-autocomplete-php": {}
