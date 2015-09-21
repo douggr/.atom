@@ -1,6 +1,6 @@
-atom-beautify
+atom-material-syntax
+atom-material-ui
+autocomplete-ctags
+ctags-status
 highlight-line
 sort-lines
-atom-material-ui
-atom-material-syntax
-
