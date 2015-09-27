@@ -4,12 +4,9 @@
     invisibles: {}
     scrollPastEnd: true
     confirmCheckoutHeadRevision: false
-    fontFamily: "Fira Mono"
+    fontFamily: "Fira Mono Medium"
   core:
     disabledPackages: [
-      "language-clojure"
-      "language-java"
-      "language-objective-c"
       "release-notes"
       "metrics"
       "link"
@@ -20,20 +17,15 @@
       "deprecation-cop"
       "encoding-selector"
       "bookmarks"
-      "language-csharp"
-      "language-toml"
       "image-view"
-      "language-coffee-script"
-      "language-hyperlink"
       "open-on-github"
       "package-generator"
       "welcome"
       "styleguide"
       "spell-check"
       "about"
-      "language-c"
-      "language-go"
       "dev-live-reload"
+      "language-python"
     ]
     audioBeep: false
     ignoredNames: [
@@ -50,7 +42,7 @@
     projectHome: "/var/projects"
     themes: [
       "atom-material-ui"
-      "atom-material-syntax"
+      "one-dark-syntax"
     ]
   welcome:
     showOnStartup: false
@@ -75,7 +67,6 @@
     ignoreWhitespaceOnCurrentLine: false
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   "highlight-line": {}
   "fuzzy-finder": {}
   "grammar-selector": {}
@@ -89,6 +80,8 @@
   "tool-bar":
     position: "Left"
   "atom-autocomplete-php": {}
+  "git-plus": {}
+  "one-dark-ui": {}
 ".basic.html.text":
   editor:
     softWrapAtPreferredLineLength: false
