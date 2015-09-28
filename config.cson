@@ -5,6 +5,8 @@
     scrollPastEnd: true
     confirmCheckoutHeadRevision: false
     fontFamily: "Fira Mono Medium"
+    fontSize: 1
+    showInvisibles: true
   core:
     disabledPackages: [
       "release-notes"
@@ -29,17 +31,40 @@
     ]
     audioBeep: false
     ignoredNames: [
-      ".Trash*"
+      "._*"
+      ".apdisk"
+      ".Apple*"
+      ".AppleDouble"
+      ".directory"
+      ".DocumentRevisions-*"
+      ".DS_Store"
+      ".fseventsd"
       ".git"
+      ".LSOverride"
+      ".project"
+      ".Spotlight-*"
       ".svn"
-      "node_modules"
-      "vendor"
-      "dist"
-      "*.png"
+      ".TemporaryItems"
+      ".Trash-*"
+      ".Trash*"
+      ".Trashes"
+      ".VolumeIcon.*"
+      "*.cache"
       "*.gif"
       "*.jpg"
+      "*.local.php"
+      "*.mo"
+      "*.png"
+      "*~"
+      "bower_components"
+      "composer.phar"
+      "dist"
+      "local.properties"
+      "Network Trash Folder"
+      "node_modules"
+      "Temporary Items"
+      "vendor"
     ]
-    projectHome: "/var/projects"
     themes: [
       "atom-material-ui"
       "one-dark-syntax"
@@ -59,6 +84,7 @@
     js_unescape_strings: true
     html_end_with_newline: true
     js_end_with_comma: true
+    beautifyEntireFileOnSave: false
   "autocomplete-plus":
     defaultProvider: "Fuzzy"
   "exception-reporting":
@@ -82,32 +108,37 @@
   "atom-autocomplete-php": {}
   "git-plus": {}
   "one-dark-ui": {}
-".basic.html.text":
-  editor:
-    softWrapAtPreferredLineLength: false
-    scrollPastEnd: true
+  "standard-formatter": {}
+  "linter-js-standard":
+    showEslintRules: true
+    honorStyleSettings: true
 ".html.php.text":
   editor:
     tabLength: 4
     scrollPastEnd: true
     softWrapAtPreferredLineLength: false
     softWrap: false
-".source.sql":
+".basic.html.text":
   editor:
-    softWrap: true
+    softWrapAtPreferredLineLength: false
+    scrollPastEnd: true
 ".json.source":
   editor:
     softWrap: false
     scrollPastEnd: true
-".coffee.source":
+    tabLength: 2
+".js.source":
   editor:
-    softWrap: false
+    softWrapAtPreferredLineLength: false
     scrollPastEnd: true
 ".litcoffee.source":
   editor:
     scrollPastEnd: true
     softWrap: false
-".js.source":
+".coffee.source":
   editor:
-    softWrapAtPreferredLineLength: false
+    softWrap: false
     scrollPastEnd: true
+".source.sql":
+  editor:
+    softWrap: true
