@@ -29,6 +29,17 @@
       "spell-check"
       "styleguide"
       "welcome"
+      "exception-reporting"
+      "language-clojure"
+      "language-c"
+      "keybinding-resolver"
+      "language-csharp"
+      "language-go"
+      "language-java"
+      "language-make"
+      "language-objective-c"
+      "language-perl"
+      "language-toml"
     ]
     audioBeep: false
     themes: [
@@ -78,8 +89,8 @@
     enableVcsColoring: true
   "ctags-status":
     outerScope: true
-  fonts:
-    fontFamily: "Fira Mono"
+  "language-babel": {}
+  "git-plus": {}
 ".html.php.text":
   editor:
     tabLength: 4
