@@ -6,6 +6,7 @@
     showInvisibles: true
     fontFamily: "Fira Mono"
     tabType: "soft"
+    invisibles: {}
   core:
     disabledPackages: [
       "about"
@@ -26,6 +27,7 @@
       "spell-check"
       "styleguide"
       "welcome"
+      "dev-live-reload"
     ]
     audioBeep: false
     themes: [
@@ -33,7 +35,6 @@
       "one-dark-syntax"
     ]
     autoHideMenuBar: true
-    projectHome: "/home/douglas/projects"
   welcome:
     showOnStartup: false
   "exception-reporting":

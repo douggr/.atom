@@ -1,1 +1,2 @@
-
+'.platform-linux':
+  'ctrl-alt-o': 'project-manager:list-projects'
