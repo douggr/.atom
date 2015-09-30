@@ -4,30 +4,28 @@
     invisibles: {}
     scrollPastEnd: true
     confirmCheckoutHeadRevision: false
-    fontFamily: "Fira Mono Medium"
-    fontSize: 1
     showInvisibles: true
+    fontFamily: "Fira Mono"
   core:
     disabledPackages: [
-      "release-notes"
-      "metrics"
-      "link"
+      "about"
       "archive-view"
       "autoflow"
       "autosave"
       "background-tips"
+      "bookmarks"
       "deprecation-cop"
       "encoding-selector"
-      "bookmarks"
       "image-view"
+      "language-python"
+      "link"
+      "metrics"
       "open-on-github"
       "package-generator"
-      "welcome"
-      "styleguide"
+      "release-notes"
       "spell-check"
-      "about"
-      "dev-live-reload"
-      "language-python"
+      "styleguide"
+      "welcome"
     ]
     audioBeep: false
     ignoredNames: [
@@ -66,27 +64,12 @@
       "vendor"
     ]
     themes: [
-      "atom-material-ui"
+      "nucleus-dark-ui"
       "one-dark-syntax"
     ]
+    autoHideMenuBar: true
   welcome:
     showOnStartup: false
-  "atom-beautify":
-    css_newline_between_rules: true
-    css_selector_separator_newline: true
-    html_indent_inner_html: true
-    _analyticsUserId: "ff0b9d6c-1337-48d2-b1b5-4c7aecd3d264"
-    _loggerLevel: "error"
-    analytics: false
-    js_break_chained_methods: true
-    js_end_with_newline: true
-    js_space_after_anon_function: true
-    js_unescape_strings: true
-    html_end_with_newline: true
-    js_end_with_comma: true
-    beautifyEntireFileOnSave: false
-  "autocomplete-plus":
-    defaultProvider: "Fuzzy"
   "exception-reporting":
     userId: "a598e322-122a-8889-25dd-d886b7febeb5"
   whitespace:
@@ -107,11 +90,15 @@
     position: "Left"
   "atom-autocomplete-php": {}
   "git-plus": {}
-  "one-dark-ui": {}
   "standard-formatter": {}
-  "linter-js-standard":
-    showEslintRules: true
-    honorStyleSettings: true
+  "git-diff":
+    showIconsInEditorGutter: true
+  "status-bar": {}
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  "git-history": {}
+  "ctags-status": {}
+
 ".html.php.text":
   editor:
     tabLength: 4
@@ -139,6 +126,3 @@
   editor:
     softWrap: false
     scrollPastEnd: true
-".source.sql":
-  editor:
-    softWrap: true

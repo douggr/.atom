@@ -1,6 +1,9 @@
-atom-material-syntax
-atom-material-ui
+atom-jade
 autocomplete-ctags
 ctags-status
-highlight-line
+git-history
+git-plus
+neutron-syntax
+nucleus-dark-ui
+pretty-json
 sort-lines

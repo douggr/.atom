@@ -1,8 +1,40 @@
-atom-text-editor {
-  font-family: "Fira Mono Medium", sans-serif;
-  font-size: 1.4rem;
+
+@font-size-basic: 16px;
+@font-size-small: .75rem;
+html,
+body {
+  font-family: "Roboto";
+  font-size: @font-size-basic;
+  text-rendering: optimizeSpeed;
 }
 
-atom-pane {
-  font-family: "DejaVu Sans", sans-serif;
+atom-workspace {
+  atom-pane.pane {
+    > ul.tab-bar {
+      .tab {
+        font-size: @font-size-small;
+      }
+    }
+  }
+  .entries {
+    font-size: @font-size-small;
+    &.list-tree {
+      > .entry {
+        text-rendering: optimizeLegibility;
+        font-size: @font-size-small;
+      }
+    }
+  }
+}
+
+atom-text-editor {
+  // font-family: "Fira Mono";
+  font-family: "Source Code Pro";
+  font-size: 15px;
+  // font-weight: 300;
+}
+
+status-bar {
+  font-family: "Fira Mono";
+  text-rendering: optimizeLegibility;
 }
