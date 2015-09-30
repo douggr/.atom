@@ -1,7 +1,6 @@
 "*":
   editor:
     showIndentGuide: true
-    invisibles: {}
     scrollPastEnd: true
     confirmCheckoutHeadRevision: false
     showInvisibles: true
@@ -29,46 +28,12 @@
       "welcome"
     ]
     audioBeep: false
-    ignoredNames: [
-      "._*"
-      ".apdisk"
-      ".Apple*"
-      ".AppleDouble"
-      ".directory"
-      ".DocumentRevisions-*"
-      ".DS_Store"
-      ".fseventsd"
-      ".git"
-      ".LSOverride"
-      ".project"
-      ".Spotlight-*"
-      ".svn"
-      ".TemporaryItems"
-      ".Trash-*"
-      ".Trash*"
-      ".Trashes"
-      ".VolumeIcon.*"
-      "*.cache"
-      "*.gif"
-      "*.jpg"
-      "*.local.php"
-      "*.mo"
-      "*.png"
-      "*~"
-      "bower_components"
-      "composer.phar"
-      "dist"
-      "local.properties"
-      "Network Trash Folder"
-      "node_modules"
-      "Temporary Items"
-      "vendor"
-    ]
     themes: [
       "nucleus-dark-ui"
       "one-dark-syntax"
     ]
     autoHideMenuBar: true
+    projectHome: "/home/douglas/projects"
   welcome:
     showOnStartup: false
   "exception-reporting":
@@ -77,54 +42,13 @@
     ignoreWhitespaceOnCurrentLine: false
   "tree-view":
     hideIgnoredNames: true
-  "highlight-line": {}
-  "fuzzy-finder": {}
-  "grammar-selector": {}
   "markdown-preview":
     useGitHubStyle: true
-  "atom-material-ui":
-    depth: true
-    disableAnimations: true
-    panelContrast: true
-    showTabIcons: "Show on all tabs"
   "tool-bar":
     position: "Left"
-  "atom-autocomplete-php": {}
-  "git-plus": {}
-  "standard-formatter": {}
   "git-diff":
     showIconsInEditorGutter: true
-  "status-bar": {}
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
-  "git-history": {}
-  "ctags-status": {}
   tabs:
     enableVcsColoring: true
-".html.php.text":
-  editor:
-    tabLength: 4
-    scrollPastEnd: true
-    softWrapAtPreferredLineLength: false
-    softWrap: false
-".basic.html.text":
-  editor:
-    softWrapAtPreferredLineLength: false
-    scrollPastEnd: true
-".json.source":
-  editor:
-    softWrap: false
-    scrollPastEnd: true
-    tabLength: 2
-".js.source":
-  editor:
-    softWrapAtPreferredLineLength: false
-    scrollPastEnd: true
-".litcoffee.source":
-  editor:
-    scrollPastEnd: true
-    softWrap: false
-".coffee.source":
-  editor:
-    softWrap: false
-    scrollPastEnd: true
