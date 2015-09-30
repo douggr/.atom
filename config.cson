@@ -35,6 +35,27 @@
       "one-dark-syntax"
     ]
     autoHideMenuBar: true
+    ignoredNames: [
+      "._*"
+      ".apm"
+      ".DS_Store"
+      ".git-*"
+      ".git"
+      ".hg"
+      ".node-gyp"
+      ".svn"
+      "*.~*"
+      "*.gif"
+      "*.jpg"
+      "*.lock"
+      "*.mo"
+      "*.png"
+      "*.Trash*"
+      "*[-.]cache"
+      "bower_components"
+      "node_modules"
+      "vendor"
+    ]
   welcome:
     showOnStartup: false
   "exception-reporting":
@@ -43,6 +64,7 @@
     ignoreWhitespaceOnCurrentLine: false
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   "markdown-preview":
     useGitHubStyle: true
   "tool-bar":
@@ -53,3 +75,10 @@
     promptWhenFileHasChangedOnDisk: false
   tabs:
     enableVcsColoring: true
+  "ctags-status":
+    outerScope: true
+  fonts:
+    fontFamily: "Fira Mono"
+".html.php.text":
+  editor:
+    tabLength: 4
