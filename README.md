@@ -1,11 +1,8 @@
-atom-config
-===========
-
-My preferences for the [Atom](https://atom.io) editor
+## [~/.atom](https://atom.io)
 
 ```shell
-git clone https://github.com/douggr/atom-config.git ~/.atom
+cd
+git clone https://github.com/douggr/.atom ~/.atom
 cd .atom
-./install.sh
+apm install
 ```
-

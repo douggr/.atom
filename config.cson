@@ -1,12 +1,13 @@
 "*":
   editor:
-    showIndentGuide: true
-    scrollPastEnd: true
     confirmCheckoutHeadRevision: false
-    showInvisibles: true
-    fontFamily: "Fira Mono"
-    tabType: "soft"
+    fontFamily: "Source Code Pro"
+    fontSize: 15
     invisibles: {}
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    tabType: "soft"
   core:
     disabledPackages: [
       "about"
@@ -16,6 +17,7 @@
       "background-tips"
       "bookmarks"
       "deprecation-cop"
+      "dev-live-reload"
       "encoding-selector"
       "image-view"
       "language-python"
@@ -27,7 +29,6 @@
       "spell-check"
       "styleguide"
       "welcome"
-      "dev-live-reload"
     ]
     audioBeep: false
     themes: [
