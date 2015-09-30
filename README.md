@@ -4,5 +4,5 @@
 cd
 git clone https://github.com/douggr/.atom ~/.atom
 cd .atom
-apm install --packages-file package.json
+apm install --packages-file packages.cson
 ```

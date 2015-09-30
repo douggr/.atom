@@ -3,7 +3,7 @@
 !.gitignore
 !config.cson
 !keymap.cson
-!package.json
+!packages.cson
 !README.md
 !snippets.cson
 !styles.less
