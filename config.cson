@@ -6,6 +6,7 @@
     confirmCheckoutHeadRevision: false
     showInvisibles: true
     fontFamily: "Fira Mono"
+    tabType: "soft"
   core:
     disabledPackages: [
       "about"
@@ -98,7 +99,8 @@
     promptWhenFileHasChangedOnDisk: false
   "git-history": {}
   "ctags-status": {}
-
+  tabs:
+    enableVcsColoring: true
 ".html.php.text":
   editor:
     tabLength: 4
