@@ -44,7 +44,7 @@
     audioBeep: false
     themes: [
       "nucleus-dark-ui"
-      "one-dark-syntax"
+      "neutron-syntax"
     ]
     autoHideMenuBar: true
     ignoredNames: [
@@ -58,7 +58,7 @@
       ".svn"
       "*.~*"
       "*.gif"
-      "*.jpg"
+      "*.jpe?g"
       "*.lock"
       "*.mo"
       "*.png"
