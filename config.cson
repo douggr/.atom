@@ -44,7 +44,7 @@
     audioBeep: false
     themes: [
       "nucleus-dark-ui"
-      "neutron-syntax"
+      "2-dark-syntax"
     ]
     autoHideMenuBar: true
     ignoredNames: [
@@ -91,6 +91,18 @@
     outerScope: true
   "language-babel": {}
   "git-plus": {}
+  pigments: {}
+  autoprefixer: {}
+  "php-getters-setters": {}
+  "atom-beautify":
+    js_space_after_anon_function: true
+  "linter-phpmd": {}
+  linter: {}
+  "php-class-tree":
+    displayOnRight: true
+  "atom-autocomplete-php": {}
+  "project-manager":
+    closeCurrent: true
 ".html.php.text":
   editor:
     tabLength: 4
