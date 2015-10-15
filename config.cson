@@ -70,8 +70,6 @@
     ]
   welcome:
     showOnStartup: false
-  "exception-reporting":
-    userId: "a598e322-122a-8889-25dd-d886b7febeb5"
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
   "tree-view":
@@ -93,14 +91,8 @@
   "git-plus": {}
   pigments: {}
   autoprefixer: {}
-  "php-getters-setters": {}
   "atom-beautify":
     js_space_after_anon_function: true
-  "linter-phpmd": {}
-  linter: {}
-  "php-class-tree":
-    displayOnRight: true
-  "atom-autocomplete-php": {}
   "project-manager":
     closeCurrent: true
 ".html.php.text":
