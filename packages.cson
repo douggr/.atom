@@ -1,12 +1,15 @@
 2-dark-syntax
 atom-beautify
 atom-jade
-color-picker
 ctags-status
 git-plus
 language-babel
-neutron-syntax
+language-scala
 nucleus-dark-ui
 pretty-json
 project-manager
+react
+scala-format
 sort-lines
+
+

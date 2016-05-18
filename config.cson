@@ -1,8 +1,15 @@
 "*":
   "atom-beautify":
-    analytics: false
-    js_space_after_anon_function: true
-    language_php_disabled: true
+    general:
+      _analyticsUserId: "32ecfc58-d044-4415-9a28-da349f5c1a8b"
+      analytics: false
+    js:
+      indent_size: 2
+      space_after_anon_function: true
+    json:
+      indent_size: 2
+    php:
+      disabled: true
   autoprefixer: {}
   core:
     audioBeep: false
@@ -69,7 +76,7 @@
   editor:
     confirmCheckoutHeadRevision: false
     fontFamily: "Source Code Pro"
-    fontSize: 16
+    fontSize: 17
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
@@ -84,6 +91,7 @@
   "language-babel": {}
   "markdown-preview":
     useGitHubStyle: true
+  "one-dark-ui": {}
   pigments: {}
   "project-manager":
     closeCurrent: true
