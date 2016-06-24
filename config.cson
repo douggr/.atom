@@ -1,23 +1,19 @@
 "*":
   "atom-beautify":
     css:
-      beautify_on_save: true
       newline_between_rules: true
     general:
       _analyticsUserId: "3ce7e879-0959-466c-816a-526b63f0b715"
     html:
-      beautify_on_save: true
       end_with_newline: true
       indent_size: 2
     js:
-      beautify_on_save: true
       end_with_comma: true
       end_with_newline: true
       space_after_anon_function: true
     json:
-      beautify_on_save: true
       break_chained_methods: true
-      preserve_newlines: false
+      preserve_newlines: true
     php:
       beautify_on_save: true
   "atom-material-ui":
@@ -70,6 +66,7 @@
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
+    tabType: "soft"
   "exception-reporting":
     userId: "69d338c8-330d-8d35-38d1-b6a7356334ca"
   "php-integrator-navigation":
