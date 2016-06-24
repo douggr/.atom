@@ -1,0 +1,6 @@
+liv:
+  group: 'DFL3'
+  title: 'Liv'
+  paths: [
+    '/var/projects/repos/dfl3/liv'
+  ]

@@ -1,0 +1,90 @@
+"*":
+  "atom-beautify":
+    css:
+      beautify_on_save: true
+      newline_between_rules: true
+    general:
+      _analyticsUserId: "3ce7e879-0959-466c-816a-526b63f0b715"
+    html:
+      beautify_on_save: true
+      end_with_newline: true
+      indent_size: 2
+    js:
+      beautify_on_save: true
+      end_with_comma: true
+      end_with_newline: true
+      space_after_anon_function: true
+    json:
+      beautify_on_save: true
+      break_chained_methods: true
+      preserve_newlines: false
+    php:
+      beautify_on_save: true
+  "atom-material-ui":
+    colors:
+      abaseColor:
+        red: 96
+        green: 125
+        blue: 139
+        alpha: 1
+      genAccent: true
+      predefinedColor: "Blue Grey"
+    tabs:
+      compactTabs: true
+    treeView:
+      blendTabs: true
+      compactList: true
+    ui:
+      animations: false
+      panelContrast: true
+      panelShadows: true
+  core:
+    audioBeep: false
+    autoHideMenuBar: true
+    disabledPackages: [
+      "language-c"
+      "language-clojure"
+      "language-csharp"
+      "language-go"
+      "language-java"
+      "language-make"
+      "language-mustache"
+      "language-objective-c"
+      "language-perl"
+      "language-python"
+      "language-ruby"
+      "language-ruby-on-rails"
+      "language-less"
+      "language-toml"
+      "language-yaml"
+    ]
+    projectHome: "/var/projects/repos/douggr"
+    themes: [
+      "atom-material-ui"
+      "2-dark-syntax"
+    ]
+  editor:
+    autoIndentOnPaste: false
+    fontFamily: "Source Code Pro"
+    fontSize: 16
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "69d338c8-330d-8d35-38d1-b6a7356334ca"
+  "php-integrator-navigation":
+    navigationRequireAltKey: false
+    navigationRequireCtrlKey: true
+  "php-integrator-symbol-viewer":
+    defaultShowInherited: true
+  "project-manager":
+    closeCurrent: true
+    environmentSpecificProjects: true
+    prettifyTitle: false
+    showPath: false
+    sortBy: "group"
+  welcome:
+    showOnStartup: false
+".html.php.text":
+  editor:
+    tabLength: 4

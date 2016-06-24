@@ -1,0 +1,9 @@
+*
+!.gitignore
+!*.md
+!config.cson
+!init.coffee
+!packages.list
+!projects.cson
+!snippets.cson
+!styles.less

@@ -1,0 +1,11 @@
+".source.coffee":
+  "Project Manager Entry":
+    prefix: "pme"
+    body: """
+      $1:
+        group: '${2:DFL3}'
+        title: '$3'
+        paths: [
+          '/var/projects/repos/${4:dfl3/${5}}'
+        ]$6
+    """
