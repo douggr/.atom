@@ -69,6 +69,11 @@
     showIconsInEditorGutter: true
   "git-plus":
     pullBeforePush: "pull --rebase"
+  linter:
+    showErrorTabLine: true
+  "linter-eslint":
+    disableWhenNoEslintConfig: false
+    globalNodePath: "/home/douglas/.local"
   "php-integrator-navigation":
     navigationRequireAltKey: false
     navigationRequireCtrlKey: true

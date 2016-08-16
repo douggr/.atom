@@ -4,6 +4,8 @@ file-templates
 git-plus
 intentions
 language-jade
+linter
+linter-eslint
 php-integrator-base
 php-integrator-navigation
 pretty-json
