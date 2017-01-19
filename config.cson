@@ -1,16 +1,8 @@
 "*":
   "atom-material-ui":
     colors:
-      abaseColor:
-        red: 92
-        green: 102
-        blue: 107
-        alpha: 1
-      accentColor:
-        red: 236
-        green: 239
-        blue: 241
-        alpha: 1
+      abaseColor: "#5c666b"
+      accentColor: "#eceff1"
       predefinedColor: "Grey"
     tabs:
       compactTabs: true
@@ -67,13 +59,14 @@
     showInvisibles: true
   "git-diff":
     showIconsInEditorGutter: true
-  "git-plus":
-    pullBeforePush: "pull --rebase"
   linter:
     showErrorTabLine: true
   "linter-eslint":
-    disableWhenNoEslintConfig: false
-    globalNodePath: "/home/douglas/.local"
+    lintHtmlFiles: true
+    useGlobalEslint: true
+  "linter-stylelint":
+    disableWhenNoConfig: false
+    useStandard: true
   "php-integrator-navigation":
     navigationRequireAltKey: false
     navigationRequireCtrlKey: true
