@@ -46,12 +46,12 @@
       "styleguide"
       "welcome"
     ]
+    telemetryConsent: "limited"
     themes: [
       "atom-material-ui"
       "2-dark-syntax"
     ]
   editor:
-    autoIndentOnPaste: false
     fontFamily: "source code pro"
     fontSize: 16
     scrollPastEnd: true
@@ -59,9 +59,9 @@
     showInvisibles: true
   "git-diff":
     showIconsInEditorGutter: true
-  linter:
-    showErrorTabLine: true
+  linter: {}
   "linter-eslint":
+    disableWhenNoEslintConfig: false
     lintHtmlFiles: true
     useGlobalEslint: true
   "linter-stylelint":

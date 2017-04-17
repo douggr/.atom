@@ -1,5 +1,6 @@
 2-dark-syntax
 atom-material-ui
+busy-signal
 data-atom
 git-plus
 hyperclick
@@ -9,6 +10,7 @@ language-pug
 linter
 linter-eslint
 linter-stylelint
+linter-ui-default
 pretty-json
 project-manager
 sort-lines
