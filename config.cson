@@ -53,7 +53,7 @@
     ]
   editor:
     fontFamily: "source code pro"
-    fontSize: 16
+    fontSize: 19
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -65,8 +65,10 @@
     lintHtmlFiles: true
     useGlobalEslint: true
   "linter-stylelint":
-    disableWhenNoConfig: false
+    showIgnored: true
     useStandard: true
+  "linter-ui-default":
+    showPanel: true
   "php-integrator-navigation":
     navigationRequireAltKey: false
     navigationRequireCtrlKey: true
