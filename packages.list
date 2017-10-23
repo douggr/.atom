@@ -1,12 +1,9 @@
 2-dark-syntax
-atom-material-ui
 atom-typescript
 busy-signal
-data-atom
+docblockr
 git-plus
-hyperclick
 intentions
-language-gradle
 language-pug
 linter
 linter-eslint
@@ -14,4 +11,6 @@ linter-stylelint
 linter-tslint
 linter-ui-default
 pretty-json
+project-manager
+pure-syntax
 sort-lines

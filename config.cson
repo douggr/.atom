@@ -1,4 +1,8 @@
 "*":
+  "atom-beautify":
+    general:
+    html:
+      end_with_newline: true
   "atom-material-ui":
     colors:
       abaseColor: "#5c666b"
@@ -45,20 +49,27 @@
       "package-generator"
       "styleguide"
       "welcome"
+      "github"
+      "linter"
     ]
     telemetryConsent: "limited"
     themes: [
-      "atom-material-ui"
-      "2-dark-syntax"
+      "one-dark-ui"
+      "pure-syntax"
     ]
   editor:
-    fontFamily: "source code pro"
-    fontSize: 19
+    fontFamily: "Office Code Pro D"
+    fontSize: 13
+    preferredLineLength: 76
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
+    tabType: "soft"
   "git-diff":
     showIconsInEditorGutter: true
+  "git-plus":
+    tags:
+      signTags: true
   linter: {}
   "linter-eslint":
     disableWhenNoEslintConfig: false
@@ -66,17 +77,17 @@
     useGlobalEslint: true
   "linter-stylelint":
     showIgnored: true
-    useStandard: true
+  "linter-tslint": {}
   "linter-ui-default":
-    showPanel: true
+    panelHeight: 133
   "php-integrator-navigation":
     navigationRequireAltKey: false
     navigationRequireCtrlKey: true
   "project-manager":
+    alwaysOpenInSameWindow: true
     sortBy: "group"
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
     squashDirectoryNames: true
   whitespace:
     ignoreWhitespaceOnCurrentLine: false

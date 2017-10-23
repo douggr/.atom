@@ -1,0 +1,27 @@
+'.source, .text':
+  dl2:
+    prefix: 'header:dl2'
+    body: '/**\n * https://dl2.tech - DL2 IT Services\n * Owlsome solutions. Owltstanding results.\n */\n\n'
+
+  donec:
+    prefix: 'donec'
+    body: """
+      Donec id elit non mi porta gravida at eget metus. Vivamus sagittis
+      lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper
+      nulla non metus auctor fringilla. Praesent commodo cursus magna, vel
+      scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
+    """
+
+  rt7:
+    prefix: 'header:rt7'
+    body: '/**\n * https://www.rt7.com.br - RT7 Soluções em TI.\n */\n\n'
+
+'.php':
+  print_r:
+    prefix: 'debug'
+    body: 'echo "<pre>" . print_r($1, true);\ndie;\n'
+
+'.js, .ts':
+  import:
+    prefix: 'import'
+    body: 'import $2 from \'${1:path}\';\n$3'
