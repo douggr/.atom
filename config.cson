@@ -1,22 +1,4 @@
 "*":
-  "atom-beautify":
-    general:
-    html:
-      end_with_newline: true
-  "atom-material-ui":
-    colors:
-      abaseColor: "#5c666b"
-      accentColor: "#eceff1"
-      predefinedColor: "Grey"
-    tabs:
-      compactTabs: true
-      tintedTabBar: true
-    treeView:
-      blendTabs: true
-    ui:
-      animations: false
-      panelContrast: true
-      panelShadows: true
   "autocomplete-plus":
     confirmCompletion: "enter"
   core:
@@ -35,7 +17,6 @@
       "language-c"
       "language-clojure"
       "language-csharp"
-      "language-gfm"
       "language-go"
       "language-java"
       "language-mustache"
@@ -52,10 +33,11 @@
       "github"
       "linter"
     ]
+    projectHome: "/home/douglas/Projects"
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
-      "pure-syntax"
+      "behave-theme"
     ]
   editor:
     fontFamily: "Office Code Pro D"
@@ -78,11 +60,6 @@
   "linter-stylelint":
     showIgnored: true
   "linter-tslint": {}
-  "linter-ui-default":
-    panelHeight: 133
-  "php-integrator-navigation":
-    navigationRequireAltKey: false
-    navigationRequireCtrlKey: true
   "project-manager":
     alwaysOpenInSameWindow: true
     sortBy: "group"
